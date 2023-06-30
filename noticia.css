@@ -1,0 +1,256 @@
+body {
+    background-image: url(back.avif);
+    padding: 15px;
+    margin: 10px;
+    overflow-x: hidden;
+}
+
+body.dark {
+    background-image: url(escuro.avif);
+  }
+  
+  .checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+  
+  .label-dark {
+    background-color: #afe18d;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 20px;
+    width: 50px;
+    transform: scale(1.2);
+  }
+  
+  .label-dark .ball {
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    height: 22px;
+    width: 22px;
+    transform: translate(0px);
+    transition: transform 1.5s linear;
+  }
+  
+  .checkbox:checked + .label-dark .ball {
+    transform: translate(30px);
+  }
+  
+  .fa-moon {
+    color: #0f47f1;
+  }
+  
+  .fa-sun {
+    color: #ebc313;
+  }
+
+header main nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Nunito', sans-serif;
+    font-size: 17px;
+}
+
+button a {
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    color: #000000;
+}
+
+.efeito {
+    border: none;
+    color: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    line-height: 0px;
+    border-radius: 30px;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.efeito {
+    background: #afe18d;
+}
+
+.efeito:hover {
+    background: rgba(0, 0, 0, 0);
+    color: #000000;
+    box-shadow: inset 0 0 0 3px #73b04a;
+}
+
+a:link {
+    color: #000000;
+}
+
+a:hover {
+    color: #4e4c4c;
+}
+
+
+
+
+
+
+
+
+
+H1{
+    color: rgb(138, 235, 138);
+    text-align: center;
+    font-size: 60px;
+}
+
+.wrapper{
+    height: 100vh;    /*altura*/
+    overflow-x: hidden;  /*esconde o eixo x lateral nao /*altura*/
+    perspective: 3px;    /* distanciamento do plano de fundo /*altura*/
+    transform-style: preserve-3d;
+}
+.secao {
+    margin: 50px;
+    position: relative; /*relative-pai absolut nos elementos filhos altura*/
+    height: 100vh;
+    min-height: 500px; 
+    transform-style: inherit; /*Herança mesma config do elemento pai altura*/
+}
+
+.secao::before{   
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -10;     /*distanciamento dos dois*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transform: translatez(-1px)scale(1.5);
+}
+
+.conteudo{
+    position: absolute;
+    top: 25%;
+    width: 80%;
+    padding: 20px 10px;
+    background-color:rgba(0, 0, 0, 0.486);
+    color: rgb(146, 215, 137); /*cor da letra*/
+    font-size: 30px;       /*tamanho da fonte da noticia*/
+    text-align:center;    /*texto centralizado da noticia*/
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: 5px 2px 2px #808080; /*sombra na caixa de texto */
+
+}
+
+.fundo1::before{
+    background-image: url(primeira.jpeg);
+    
+}
+
+.fundo2::before{
+    background-image: url(segunda.jpg);
+   
+
+}
+
+.fundo3::before{
+    background-image: url(terceira.jpg);
+   
+
+
+}
+
+.fundo4::before{
+    background-image: url(quarta.jpeg);
+   
+
+}
+
+footer {
+    background-color: #afe18d;
+    font-family: 'Nunito', sans-serif;
+    position: absolute;
+    margin-left: -25px;
+    background-size: 100%;
+    width: calc(100%);
+}
+
+.paragrafo {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+}
+
+.container-footer {
+    padding: 70px 30px 20px;
+}
+
+.container-footer ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.container-footer ul li a {
+    color: rgb(0, 0, 0);
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.icones {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+}
+
+.icones a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    border-radius: 50px;
+    width: 80px;
+    top: 40px;
+}
+
+.icones a i {
+    font-size: 2em;
+    color: black;
+}
+
+  @media(max-width:768px) {
+    .menu-hamburguer {
+        display: block;
+  
+    }
+  
+    .menu {
+        display: none;
+        flex-direction: column;
+    }
+  
+    .menu li {
+        margin: 10px 0;
+  
+    }
+  
+    .menu.ativo {
+        display: flex;
+    }
+  }

@@ -1,0 +1,273 @@
+body {
+    background-image: url(back.avif);
+    padding: 0;
+    margin: 20px;
+    font-family: 'Bree Serif', serif;
+    overflow-x: hidden;
+}
+
+body.dark {
+    background-image: url(escuro.avif);
+  }
+  
+  .checkbox {
+    opacity: 0;
+    position: relative;
+  }
+  
+  .label-dark {
+    background-color: #afe18d;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 20px;
+    width: 50px;
+    transform: scale(1.2);
+  }
+  
+  .label-dark .ball {
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    height: 22px;
+    width: 22px;
+    transform: translate(0px);
+    transition: transform 1.5s linear;
+  }
+  
+  .checkbox:checked + .label-dark .ball {
+    transform: translate(30px);
+  }
+  
+  .fa-moon {
+    color: #0f47f1;
+  }
+  
+  .fa-sun {
+    color: #ebc313;
+  }
+
+
+header main nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+button a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #000000;
+}
+
+.btn-dark {
+
+    height: 10%;
+    width: 10%;
+    background: none;
+    border: none;
+}
+
+.btn-dark img {
+
+    height: 50%;
+    width: 50%;
+    display: flex;
+}
+
+.efeito {
+    border: none;
+    color: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    line-height: 0px;
+    border-radius: 30px;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.efeito {
+    background: #afe18d;
+}
+
+.efeito:hover {
+    background: rgba(0, 0, 0, 0);
+    color: #000000;
+    box-shadow: inset 0 0 0 3px #73b04a;
+}
+
+a:link {
+    color: #000000;
+}
+
+a:hover {
+    color: #4e4c4c;
+}
+
+.video {
+
+    border-radius: 18px;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    background-color: #95d774;
+    padding-top: 38px;
+    padding-bottom: 10px;
+
+}
+
+
+
+
+h1 {
+    font-size: 30px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    margin: 46px;
+    text-shadow: 8px 8px 30px rgb(247, 247, 247);
+}
+
+h2 {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    text-shadow: 8px 8px 30px #162902;
+    
+
+}
+
+h3 {
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    font-size: 26px;
+    margin-left: 46px;
+    margin-right: 40px;
+    padding: 15px;
+    background-color: #95d774;
+    border-radius: 18px;
+    text-indent: 25px;
+
+
+}
+
+p {
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    font-size: 23px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-indent: 25px;
+}
+
+img {
+
+    height: 700px;
+    width: 100%;
+}
+
+
+.imagem {
+    width: 20%;
+    height: 20%;
+
+}
+
+.imagem2 {
+
+    width: 100%;
+    height: 676px;
+}
+
+
+
+fieldset {
+    border-radius: 18px;
+    border: solid 5px #95d774;
+    margin: 50px;
+    background-color: beige;
+
+}
+
+footer {
+    background-color: #afe18d;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    margin-left: -25px;
+    background-size: 100%;
+    width: calc(100% + 25px);
+}
+
+.paragrafo p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.container-footer {
+    padding: 70px 30px 20px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-right: 100px;
+}
+
+ul li a {
+    color: rgb(0, 0, 0);
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.icones {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+}
+
+.icones a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    border-radius: 50px;
+    width: 80px;
+    top: 40px;
+}
+
+.icones a i {
+    font-size: 2em;
+    color: black;
+}
+
+@media(max-width:768px) {
+
+    .container-footer {
+        display: block;
+    }
+  
+    #footer a {
+        display: flex;
+        flex-direction: column;
+    }
+  
+    .icones {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+  }

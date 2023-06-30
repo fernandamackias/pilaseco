@@ -1,0 +1,241 @@
+body {
+    background-color: beige;
+    padding: 15px;
+    margin: 10px;
+    overflow-x: hidden;
+}
+
+body.dark {
+    background-image: url(escuro.avif);
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+label {
+    background-color: #afe18d;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 20px;
+    width: 50px;
+    transform: scale(1.2);
+}
+
+.label .ball {
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    height: 22px;
+    width: 22px;
+    transform: translate(0px);
+    transition: transform 1.5s linear;
+}
+
+.checkbox:checked + .label .ball {
+    transform: translate(30px);
+}
+
+.fa-moon {
+    color: #0f47f1;
+}
+
+.fa-sun {
+    color: #ebc313;
+}
+
+h1 {
+    display: grid;
+    justify-content: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+}
+
+header main nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    justify-content: space-evenly;
+    font-family: 'Nunito', sans-serif;
+    font-size: 17px;
+}
+
+h1 span {
+    font-family: 'Allison', cursive;
+    font-size: 100px;
+    margin-left: 40px;
+    margin-top: -50px;
+    color: #95d795;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+button a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.efeito {
+    border: none;
+    color: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    line-height: 0px;
+    border-radius: 30px;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 400ms ease;
+    width: 160px;
+}
+
+.efeito {
+    background: #afe18d;
+}
+
+.efeito:hover {
+    background: rgba(0, 0, 0, 0);
+    color: #000000;
+    box-shadow: inset 0 0 0 3px #73b04a;
+}
+
+a:link {
+    color: #000000;
+    text-decoration: none;
+}
+
+#text {
+    font-size: 2.6vw;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 980px;
+    margin: 0 auto;
+    grid-gap: 30px;
+    overflow: hidden;
+}
+
+.card {
+    background-color: #afe18d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 50px;
+    border-radius: 20px;
+}
+
+.imagem {
+    width: 100px;
+    height: 100px;
+    border-radius: 60%;
+}
+
+.estrelas {
+    width: 120px;
+}
+
+#contato {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#contato form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+    padding: 5px 20px;
+    gap: 10px;
+}
+
+#contato input, textarea, button {
+    box-shadow: 0 1px 2px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#contato form button {
+    background-color: #afe18d;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+footer {
+    background-color: #afe18d;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    margin-left: -25px;
+    background-size: 100%;
+    width: calc(100% + 25px);
+}
+
+.paragrafo {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.container-footer {
+    padding: 70px 30px 20px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-right: 100px;
+}
+
+ul li a {
+    color: rgb(0, 0, 0);
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.icones {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+}
+
+.icones a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    border-radius: 50px;
+    width: 80px;
+    top: 40px;
+}
+
+.icones a i {
+    font-size: 2em;
+    color: black;
+}
+

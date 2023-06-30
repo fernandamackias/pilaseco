@@ -1,0 +1,161 @@
+
+body {
+    background-image: url(back.avif);
+    padding: 0;
+    margin: 0;
+    font-family:'Nunito', sans-serif;
+    overflow-x:hidden;
+    
+}
+header main nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Nunito', sans-serif;
+    font-size: 17px;
+}
+
+button a {
+    text-decoration: none;
+    color: #000000;
+}
+.btn-dark{
+   
+height: 10%;
+width: 10%;
+background: none;
+border: none;
+}
+.btn-dark img{
+
+height: 50%;
+width: 50%;
+display: flex;
+
+
+}
+
+
+.efeito {
+    border: none;
+    color: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    line-height: 0px;
+    border-radius: 30px;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.efeito {
+    background: #afe18d;
+}
+
+.efeito:hover {
+    background: rgba(0, 0, 0, 0);
+    color: #000000;
+    box-shadow: inset 0 0 0 3px #73b04a;
+}
+
+a:link {
+    color: #000000;
+}
+
+a:hover {
+    color: #4e4c4c;
+}
+
+
+
+.video{
+
+border-radius: 18px;
+margin-left: 25%;
+margin-right: 25%;
+text-align: center;
+background-color: #95d774 ;
+padding-top: 40px;
+padding-bottom: 10px;
+
+
+}
+
+h1{
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    margin: 50px;
+    text-shadow: 8px 8px 30px rgb(247, 247, 247);
+}
+
+h2{
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    text-shadow: 8px 8px 30px #162902 ;
+
+}
+
+p{
+    font-family: 'Nunito', sans-serif;
+    text-align:center;
+}
+img{
+
+height: 700px;
+width: 100%;
+} 
+h3{
+font-family: 'Allison', cursive;
+text-align: center;
+font-size: 70px;
+color:black;
+text-shadow: 2px 2px #95d774;
+}
+li{
+
+font-size: 20px;
+
+}
+ul{
+    margin-left: 30%;
+}
+.imagem{
+    width: 20%;
+    height: 20%;
+    
+    }
+    .imagem2{
+      
+        width: 100%;
+        height: 676px;
+ 
+  
+   
+    }
+    fieldset{
+        border-radius: 18px;
+border: solid 5px #95d774;
+margin: 35px;
+background-color: beige;
+}
+
+footer {
+    background-image: url(footer.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    image-rendering: initial;
+    position: relative;
+    bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    background-color: rgb(169, 169, 239);
+    width: 100%;
+    display: flex;
+    right: 0%;
+    text-align: center;
+    justify-content: space-evenly;
+}
